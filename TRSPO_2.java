@@ -3,8 +3,8 @@ import java.util.Scanner;
 class ThreadOne implements Runnable {
     public void run() {
         Scanner sc = new Scanner(System.in);
-        System.out.println("¬ведите два числа: ");
-        System.out.println("—умма чисел = "+(sc.nextInt() + sc.nextInt()));
+        System.out.println("Enter two numbers: ");
+        System.out.println("Their sum = "+(sc.nextInt() + sc.nextInt()));
         sc.close();
     }
 }
@@ -19,9 +19,9 @@ class ThreadTwo implements Runnable {
                 System.out.println("The thread has been interrupted");
             }
             if(time % 5 != 0) {
-                System.out.println("я работаю...");
+                System.out.println("I'm working...");
             } else {
-                System.out.println("ƒумай быстрее!");
+                System.out.println("Think faster!");
             }
             time++;
         }
